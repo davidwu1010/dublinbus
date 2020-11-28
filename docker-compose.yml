@@ -1,0 +1,19 @@
+version: "3"
+services:
+  nginx:
+    depends_on:
+      - fastapi
+    build: frontend/
+    ports:
+    - "80:80"
+    - "443:443"
+  fastapi:
+    build: fastapi/
+    environment:
+      - PYTHON_ENV=production
+    depends_on:
+      - redis
+  redis:
+    image: bitnami/redis:latest
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes

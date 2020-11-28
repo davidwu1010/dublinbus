@@ -1,0 +1,7 @@
+const mapActionTypes = {
+  SET_POLYLINES: 'SET_POLYLINES',
+  HIGHLIGHT_POLYLINE: 'HIGHLIGHT_POLYLINE',
+  CLEAR_POLYLINES: 'CLEAR_POLYLINES'
+};
+
+export default mapActionTypes;

@@ -1,0 +1,1 @@
+mysqldump --column-statistics=0 -h 1.tcp.eu.ngrok.io -udublinbus -pqwerty789! -P27021 --opt dublinbus RT_Vehicles | mysql -h localhost -uroot -p dublinbus;
